@@ -2,6 +2,7 @@
 import React from "react";
 import { Boxes } from "../ui/background-boxes";
 import { cn } from "../../lib/utils";
+import Link from "next/link";
 
 export function BackgroundBoxesDemo() {
   return (
@@ -10,11 +11,13 @@ export function BackgroundBoxesDemo() {
 
       <Boxes />
       <h1 className={cn("md:text-4xl text-xl text-white relative z-20")}>
-        Tailwind is Awesome
+        Communicate with me 
       </h1>
       <p className="text-center mt-2 text-neutral-300 relative z-20">
-        Framer motion is the best animation library ngl
+        You can get intouch
       </p>
+      <button><Link href="hussienfci@gmail.com" className="btn text-center mt-2 text-neutral-300 relative z-20 ">My Email</Link>
+      </button>
     </div>
   );
 }
