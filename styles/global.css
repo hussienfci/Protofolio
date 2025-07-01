@@ -1,13 +1,22 @@
 @import "tailwindcss";
 
-/*
-*/
-@tailwind base;
-@tailwind _components;
-@tailwind utilities;
 
+/* @tailwind base;
+@tailwind _components; */
+@tailwind utilities;
+ 
 @theme inline {
+  --animate-move: move 5s linear infinite;
+ 
   --font-display: "Inter", "sans-serif";
   --color-primary-500: oklch(0.84 0.18 117.33);
   --spacing: 0.25rem;
+  @keyframes move {
+    0% {
+      transform: translateX(-200px);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+  }
 }

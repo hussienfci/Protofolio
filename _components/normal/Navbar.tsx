@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
 // import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
-import { cn } from "../../lib/utils";
 import { FloatingNav } from "../ui/floating-navbar";
 
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
-
+import { GiSkills } from "react-icons/gi";
+import { TfiWrite } from "react-icons/tfi";
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
@@ -17,23 +17,30 @@ export function NavbarDemo() {
 
 function Navbar({ className }: { className?: string }) {
    const navItems = [
-    {
-      name: "Home",
-      link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "About",
-      link: "/about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Contact",
-      link: "/contact",
+     {
+       name: "Profile",
+       link: "/#about",
+       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      },
+      {
+        name: "Work Experience",
+        link: "#proExp",
+        icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      }, 
+      {
+      name: "Projects",
+      link: "#projects",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
+        <TfiWrite className="h-4 w-4 text-neutral-500 dark:text-white" />
+        ),
+      },
+      {
+        name: "Skills",
+        link: "#skills",
+        icon: (
+          <GiSkills className="h-4 w-4 text-neutral-500 dark:text-white" />
+        ),
+      }, 
   ];
    return (
     <div className="relative  w-full">
@@ -41,3 +48,4 @@ function Navbar({ className }: { className?: string }) {
     </div>
   );
 }
+// 

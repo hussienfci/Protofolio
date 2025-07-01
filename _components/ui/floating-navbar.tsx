@@ -33,12 +33,8 @@ export const FloatingNav = ({
         setVisible(false);
       } else {
         if (direction < -0.0001) {
-            console.log(`direction`);
-            
           setVisible(true);
         } else {
-            console.log(`No direction`);
-            
           setVisible(false);
         }
       }
