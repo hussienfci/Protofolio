@@ -12,6 +12,7 @@ import ProjectsSection from '../_components/normal/ProjectsSection'
 import { Button } from '../_components/ui/moving-border' ; 
 import { ToastContainer, toast } from 'react-toastify';
 import SkillsSection from '../_components/normal/SkillsSection'
+import ContactSection from '../_components/normal/ContactSection'
 
 
 export default function MyApp() {
@@ -39,15 +40,16 @@ export default function MyApp() {
       console.error(`Failed to copy text  :(` , error);
       
     }
-  }
-
+  };
+  
   
   return (
     <div className='bg-black'>
     
       <NavbarDemo/> 
       {/* First section In portifolio */}
-      <BackgroundLinesDemo>
+    <div className='bg-black'>
+    <BackgroundLinesDemo>
       
         <Button
           borderRadius="1.75rem"
@@ -70,7 +72,18 @@ export default function MyApp() {
         {/* Skill sections */}
         <SkillsSection/>
        
+
+      
+       
       </BackgroundLinesDemo>
+    </div>
+    
+    
+      <div>
+        {/* Contact section */}
+        <ContactSection/>
+
+      </div>
 
         {/* Second Section in portifolio */}
       {/* <BackgroundBoxesDemo/> */}
