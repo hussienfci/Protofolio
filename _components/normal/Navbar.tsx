@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import { FloatingNav } from "../ui/floating-navbar";
 
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
-import { GiSkills } from "react-icons/gi";
+import { GiSkills  } from "react-icons/gi";
 import { TfiWrite } from "react-icons/tfi";
+import { BiSolidPhoneCall } from "react-icons/bi";
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
@@ -20,27 +21,34 @@ function Navbar({ className }: { className?: string }) {
      {
        name: "Profile",
        link: "/#about",
-       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white " />,
       },
       {
         name: "Work Experience",
         link: "#proExp",
-        icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white " />,
       }, 
       {
       name: "Projects",
       link: "#projects",
       icon: (
-        <TfiWrite className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <TfiWrite className="h-4 w-4 text-neutral-500 dark:text-white " />
         ),
       },
       {
         name: "Skills",
         link: "#skills",
         icon: (
-          <GiSkills className="h-4 w-4 text-neutral-500 dark:text-white" />
+          <GiSkills className="h-4 w-4 text-neutral-500 dark:text-white " />
         ),
-      }, 
+      },
+      {
+        name: "Contact",
+        link: "#contact",
+        icon: (
+          <BiSolidPhoneCall className="h-4 w-4 text-neutral-500 dark:text-white " />
+        ),
+      },
   ];
    return (
     <div className="relative  w-full">

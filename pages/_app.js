@@ -13,6 +13,7 @@ import { Button } from '../_components/ui/moving-border' ;
 import { ToastContainer, toast } from 'react-toastify';
 import SkillsSection from '../_components/normal/SkillsSection'
 import ContactSection from '../_components/normal/ContactSection'
+import EducationSection from '../_components/normal/EducationSection'
 
 
 export default function MyApp() {
@@ -72,19 +73,16 @@ export default function MyApp() {
         {/* Skill sections */}
         <SkillsSection/>
        
-
+        {/* Contact section */}
+        <ContactSection/>
+        
+        {/* Education section */}
+        <EducationSection/>
       
        
       </BackgroundLinesDemo>
     </div>
     
-    
-      <div>
-        {/* Contact section */}
-        <ContactSection/>
-
-      </div>
-
         {/* Second Section in portifolio */}
       {/* <BackgroundBoxesDemo/> */}
 
