@@ -36,7 +36,7 @@ const projects = [
         url:"https://github.com/KarimWagdi/Learning-Management-System" 
     } , 
     {
-        img:"/ilearn.png"  , 
+        img:"/Ilearn.png"  , 
         title:"Ilearn site (freelance)"  , 
         url:"#" 
     } , 
