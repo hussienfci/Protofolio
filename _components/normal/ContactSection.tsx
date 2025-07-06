@@ -1,8 +1,8 @@
 // "use client";
 import React, { ChangeEvent, useState } from 'react'
 import Swal from 'sweetalert2' ; 
-import { Label } from '../ui/label';
-import { Input } from '../ui/input';
+import { Label } from '../ui/Label';
+import { Input } from '../ui/Input';
 import { cn } from '../../lib/utils';
 import { FloatingDockDemo } from './FloatingDock';
  
