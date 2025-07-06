@@ -12,9 +12,14 @@ function ContactSection() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setResult("Sending....");
+
     const form = e.target as HTMLFormElement;
 
-   const response = await fetch("https://api.web3forms.com/submit", {
+    const nameInput = form.elements.namedItem("name") as HTMLInputElement;
+    const emailInput = form.elements.namedItem("email") as HTMLInputElement;
+    const messageInput = form.elements.namedItem("message") as HTMLTextAreaElement;
+   
+    const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -22,18 +27,17 @@ function ContactSection() {
             },
             body: JSON.stringify({
                 access_key: "4922a8fd-9acc-4e4d-851f-a28049ee743e",
-                name: e.target.name.value  ,
-                email: e.target.email.value,
-                message: e.target.message.value,
+                name: nameInput.value,
+                email: emailInput.value,
+                message: messageInput.value,
             }),
         });
 
     const data = await response.json();
-    const name = form.elements.namedItem("name") as HTMLInputElement;
-  
+ 
     if (data.success) {
       Swal.fire({
-      title: `Thank you ${name.value}💙`,
+      title: `Thank you ${nameInput.value}💙`,
       text: "Email has been sent!",
       icon: "success"
     });
