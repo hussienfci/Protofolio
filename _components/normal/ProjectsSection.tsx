@@ -38,7 +38,7 @@ const projects = [
     {
         img:"/Ilearn.png"  , 
         title:"Ilearn site (freelance)"  , 
-        url:"#" 
+        url:"https://aiilearn.site" 
     } , 
     
  ]; 

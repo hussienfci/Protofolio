@@ -72,7 +72,7 @@ const iconVariants = {
 
 export default function SkillsSection(): JSX.Element {
   return (
-    <section className="pb-12 px-6 bg-black dark:bg-black" id="skills">
+    <section className="pb-12 px-6 bg-white dark:bg-black" id="skills">
       <div className="max-w-6xl mx-auto">
         <h2 className="mt-[5rem] bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-l md:text-2xl lg:text-5xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
           Skills

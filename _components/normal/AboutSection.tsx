@@ -21,7 +21,7 @@ export default function AboutSection(){
 function TextRevealCardPreview() {
   
   return (
-    <div  className="flex items-center justify-center h-[20rem] rounded-2xl w-full">
+    <div  className="flex items-center justify-center h-[20rem] rounded-2xl w-full  ">
       <TextRevealCard
         text="You know the business"
         revealText="I know the chemistry "
