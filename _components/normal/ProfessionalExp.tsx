@@ -100,7 +100,7 @@ function ProfessionalExp() {
                     </div>
                     <div className="text content">
                     <h1 className="font-bold text-xl md:text-2xl text-[#04bdfb] relative z-10">
-                        ABAP & React Trainee
+                        SAP & REACT Trainee
                     </h1>
                     <p className="font-normal text-md text-[#f3d2d2e2] relative z-50 my-4">
                            <span className="text-[#157ae5]">ABAP consultant<span className="text-[#157ae5] z-50"> & React Developer</span>
