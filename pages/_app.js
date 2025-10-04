@@ -14,6 +14,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import SkillsSection from '../_components/normal/SkillsSection'
 import ContactSection from '../_components/normal/ContactSection'
 import EducationSection from '../_components/normal/EducationSection'
+import CompetitionsSection from '../_components/normal/CompetitionsSection'
 
 
 export default function MyApp() {
@@ -67,6 +68,9 @@ export default function MyApp() {
         {/* Professional Experience section*/}
         <ProfessionalExp/>
 
+        {/* Competition Section */}
+        <CompetitionsSection/>
+        
         {/* Projects Section */}
         <ProjectsSection/>
 
