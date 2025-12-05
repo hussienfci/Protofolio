@@ -9,7 +9,7 @@ function ProfessionalExp() {
           <h1 className="mt-[5rem] bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-l md:text-2xl lg:text-5xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
             Professional Experience
           </h1>  
-          <div className="relative grid grid-cols-1 gap-30  md:grid-cols-2">
+        <div className="relative grid grid-cols-1 gap-30  md:grid-cols-2">
             <div className="max-w-xs w-full group/card">
                 <div
                     className={cn(
@@ -181,7 +181,42 @@ function ProfessionalExp() {
                     </div>
                 </div>
             </div>
-          </div>    
+             {/* New Card */}
+             <div className=" flex flex-col justify-between py-0">
+             <div
+                    className={cn(
+                    " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl  max-w-sm mx-auto backgroundImage flex flex-col justify-between p-2",
+                    `bg-[url(/AZM.jpg)] bg-cover bg-no-repeat max-w-2xl w-full group/card object-contain`
+                )}
+                >
+                    <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
+                    <div className="flex flex-row items-center space-x-4 z-10">
+                    <img
+                        height="100"
+                        width="100"
+                        alt="Avatar"
+                        src="/AZM.jpg"
+                        className="h-10 w-10 rounded-full border-2 object-cover"
+                    />
+                    <div className="flex flex-col">
+                        <p className="font-normal text-sm text-black relative z-10">
+                         AZM Squad
+                        </p>
+                    </div>
+                    </div>
+                    <div className="text content">
+                    <h1 className="font-bold text-xl md:text-2xl text-[#9004fb] relative z-10">
+                        ServiceNow Trainee
+                    </h1>
+                    <p className="font-normal text-md text-[#f3d2d2e2] relative z-50 my-1">
+                        <br /><span className="inline-block border-3 border-[#171716] rounded-md p-1 text-[#9004fb] ">Remote</span>
+                    </p>
+                    </div>
+                </div>
+             </div>
+            {/* End */}  
+    
+          </div>  
     </div>
         
   )

@@ -39,7 +39,12 @@ const projects = [
         img:"/Ilearn.png"  , 
         title:"Ilearn site (freelance)"  , 
         url:"https://aiilearn.site" 
-    } , 
+    } ,  
+    {
+        img:"/servicenow.avif"  , 
+        title:"IT Equipment Requests"  , 
+        url:"https://github.com/hussienfci/ServiceNow_mini_project" 
+    } ,
     
  ]; 
 function ProjectsSection() {
