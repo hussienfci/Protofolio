@@ -45,7 +45,11 @@ const projects = [
         title:"IT Equipment Requests"  , 
         url:"https://github.com/hussienfci/ServiceNow_mini_project" 
     } ,
-    
+    {
+        img:"/servicenow.avif"  , 
+        title:"Hospital Management System"  , 
+        url:"https://github.com/adel-3/HMS-ServicNow-Project" 
+    } ,
  ]; 
 function ProjectsSection() {
   return (
