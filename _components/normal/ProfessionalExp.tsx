@@ -206,10 +206,16 @@ function ProfessionalExp() {
                     </div>
                     <div className="text content">
                     <h1 className="font-bold text-xl md:text-2xl text-[#9004fb] relative z-10">
-                        ServiceNow Trainee
+                        Software Engineer
                     </h1>
+                    <h2 className="font-bold text-xl md:text-sm text-[#9004fb] relative z-10">
+                        ServiceNow Developer
+                    </h2>
+                    <h3 className="font-bold text-xl md:text-sm  text-[#9004fb] relative z-10">
+                        Saudi Arabia
+                    </h3>
                     <p className="font-normal text-md text-[#f3d2d2e2] relative z-50 my-1">
-                        <br /><span className="inline-block border-3 border-[#171716] rounded-md p-1 text-[#9004fb] ">Remote</span>
+                        <br /><span className="inline-block border-3 border-[#171716] rounded-md p-1 text-[#9004fb] ">Hyprid</span>
                     </p>
                     </div>
                 </div>

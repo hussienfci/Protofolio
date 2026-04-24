@@ -50,6 +50,11 @@ const projects = [
         title:"Hospital Management System"  , 
         url:"https://github.com/adel-3/HMS-ServicNow-Project" 
     } ,
+    {
+        img:"/premium_residency.jpg"  , 
+        title:"Premium Residency"  , 
+        url:"https://pr.gov.sa/" 
+    } ,
  ]; 
 function ProjectsSection() {
   return (
